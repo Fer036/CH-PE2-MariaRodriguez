@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap rel="stylesheet');
+
+/* Reset */
+* {
+    width: auto;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* Declaración de variables */
+:root {
+    --bg-color: black;
+    --text-color: #FEFAF6;
+    --text-secondary: #EADBC8;
+    --text-tres: #DAC0A3;
+}
+
+
+/* Formato general */
+body {
+    height: 90vh;
+    width: 100%;
+
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin: 3rem;
+}
+
+h1 {
+    color: var(--text-secondary);
+}
+
+h2, h4, #fecha {
+    color: var(--text-tres);
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 2rem;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.7rem;
+}
+
+li {
+    margin: .5rem;
+    width: 30rem;
+
+    padding: .5rem;
+    border: 1px solid var(--text-secondary);
+}
+
+a {
+    text-decoration: none;
+
+    padding: .3rem;
+    margin: 1rem;
+
+    color: var(--text-tres);
+}
+
+li:hover {
+    background-color: var(--text-color);
+    border: var(--text-tres);
+}
+
+a:hover {
+    color: var(--bg-color);
+}
