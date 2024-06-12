@@ -128,16 +128,12 @@ class TableroJuego {
 
         // Muestro una estrella por cada ronda ganada: 
         const contenedorEstrellas = document.getElementById('estrellas');
-        if (contenedorEstrellas) {
-            contenedorEstrellas.innerHTML = '';
-            this.jugador.rondasGanadas.forEach(() => {
-                const estrella = document.createElement('span');
-                estrella.innerText = '⭐';
-                contenedorEstrellas.appendChild(estrella);
-            });
-        } else {
-            console.error("Elemento con id 'estrellas' no encontrado en el DOM");
-        }
+        contenedorEstrellas.innerHTML = '';
+        this.jugador.rondasGanadas.forEach(() => {
+            const estrella = document.createElement('span');
+            estrella.innerText = '⭐';
+            contenedorEstrellas.appendChild(estrella);
+        });
 
         if (confirm('¿Jugamos otra?')) {
             this.jugar();
